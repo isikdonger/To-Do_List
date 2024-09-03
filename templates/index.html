@@ -1,0 +1,19 @@
+{% include "header.html" %}
+
+<div class="center-wrapper">
+    <div class="Tasks">
+        <h2 id="Task_Title">Tasks</h2>
+        <div class="Task_List_Container">
+            <ul class="Task_List">
+                {% for task in tasks %}
+                <li>{{ task }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="Buttons">
+        <a>Delete Task</a>
+        <a>Edit Task</a>
+        <a href="{{url_for('add_task')}}">Add Task</a>
+    </div>
+</div>

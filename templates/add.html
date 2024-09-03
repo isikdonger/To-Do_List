@@ -1,0 +1,20 @@
+{% block content %}
+{% include "header.html" %}
+
+<div class="center-wrapper">
+    <div class="container">
+        <h1 class="my-4">Add a New Task</h1>
+        <form method="POST" action="{{ url_for('add_task') }}">
+            {{ form.hidden_tag() }}  <!-- CSRF token -->
+            <div class="mb-3">
+                {{ form.task.label(class="form-label") }}
+                {{ form.task(class="form-control") }}
+            </div>
+            <div class="mb-3" id="btn">
+                {{ form.submit(class="btn btn-primary") }}
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
