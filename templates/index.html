@@ -1,12 +1,12 @@
 {% include "header.html" %}
 
+<h2 id="Task_Title">Tasks</h2>
 <div class="center-wrapper">
     <div class="Tasks">
-        <h2 id="Task_Title">Tasks</h2>
         <div class="Task_List_Container">
             <ul class="Task_List">
                 {% for task in tasks %}
-                <li>{{ task }}</li>
+                    <li>{{ task }}</li>
                 {% endfor %}
             </ul>
         </div>

@@ -16,8 +16,15 @@
     padding 5px;
 }
 
+h2 {
+    text-align: center;
+    font-size: 45px;
+    margin: 20px;
+    padding: 20px;
+}
+
 html, body {
-    height: 650px;
+    height: 600px;
     margin: 0;
 }
 
@@ -75,9 +82,11 @@ html, body {
 .Buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 50px;
     font-size: 20px;
+    height: 100vh;
+    padding: 20px;
 }
 
 .Buttons a {

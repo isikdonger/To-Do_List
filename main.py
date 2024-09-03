@@ -11,9 +11,6 @@ Bootstrap5(app)
 
 Tasks = []
 
-for i in range(25):
-    Tasks.append(f"Task {i+1}")
-
 
 class TaskForm(FlaskForm):
     task = StringField("Task", validators=[DataRequired()])
