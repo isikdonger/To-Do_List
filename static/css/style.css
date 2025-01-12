@@ -10,8 +10,7 @@
     font-size: 6em;
 }
 
-.Head h1,
-.Head p {
+.Head h1, .Head p {
     margin: 5px;
     padding 5px;
 }
@@ -24,7 +23,7 @@ h2 {
 }
 
 html, body {
-    height: 600px;
+    height: calc(100vh - 265px);
     margin: 0;
 }
 
@@ -74,9 +73,33 @@ html, body {
     padding: 0;
 }
 
-.Tasks li {
+.Task_List div {
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.Task_List li {
     margin: 10px;
     padding 10px;
+}
+
+.Task_List div:hover {
+    background-color: red;
+}
+
+.Task_List div:hover li {
+    color: white;
+}
+
+.Task_List #selected {
+    background-color: blue;
+}
+
+.Task_List #selected li {
+    color: white;
 }
 
 .Buttons {

@@ -6,14 +6,16 @@
         <div class="Task_List_Container">
             <ul class="Task_List">
                 {% for task in tasks %}
-                    <li>{{ task }}</li>
+                    <div>
+                        <li>{{ task }}</li>
+                    </div>
                 {% endfor %}
             </ul>
         </div>
     </div>
     <div class="Buttons">
-        <a>Delete Task</a>
-        <a>Edit Task</a>
-        <a href="{{url_for('add_task')}}">Add Task</a>
+        <a id="delete">Delete Task</a>
+        <a id="edit">Edit Task</a>
+        <a id="add" href="{{url_for('add_task')}}">Add Task</a>
     </div>
 </div>

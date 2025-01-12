@@ -1,0 +1,19 @@
+{% block content %}
+{% include "header.html" %}
+
+<div class="center-wrapper">
+    <div class="container">
+        <h1 class="my-4">Edit Task</h1>
+        <form id="editForm">
+            <div class="mb-3">
+                <label for="taskInput" class="form-label">Edit Task</label>
+                <input type="text" id="taskInput" class="form-control" value="{{ item }}">
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
